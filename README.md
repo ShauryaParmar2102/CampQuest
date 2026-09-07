@@ -263,6 +263,8 @@ Inside the main `CampQuest` folder, create a new file called:
 
 ---
 
+
+
 ## 👨‍💻 Author
 
 **Shaurya Parmar**
