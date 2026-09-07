@@ -258,11 +258,7 @@ Before running CampQuest, you need to create your own Cloudinary account and env
 
 Inside the main `CampQuest` folder, create a new file called:
 
-```text
 .env
-
----
-
 
 
 ## 👨‍💻 Author
