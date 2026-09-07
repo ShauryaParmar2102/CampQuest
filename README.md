@@ -191,7 +191,9 @@ CampQuest uses MongoDB with Mongoose.
 Main collections include:
 
 🏕️ campgrounds
+
 👤 users
+
 ⭐ reviews
 
 Mongoose models define the structure and relationships between the application's data.
@@ -203,9 +205,13 @@ CampQuest uses Passport.js and passport-local-mongoose for user authentication.
 Authentication is used to protect actions such as:
 
 Creating campgrounds
+
 Editing campgrounds
+
 Deleting campgrounds
+
 Creating reviews
+
 Deleting reviews
 
 Authorisation middleware also prevents users from editing or deleting content belonging to another user.
