@@ -236,6 +236,33 @@ This project helped me practise:
 
 ---
 
+## 🔐 Account & Environment Setup
+
+Before running CampQuest, you need to create your own Cloudinary account and environment file.
+
+### ☁️ 1. Create a Cloudinary Account
+
+1. Go to Cloudinary and create a free account.
+
+2. Log in to the Cloudinary Console.
+
+3. Find your:
+   - Cloud Name
+   - API Key
+   - API Secret
+4. Keep these details private.
+
+---
+
+### 📄 2. Create a `.env` File
+
+Inside the main `CampQuest` folder, create a new file called:
+
+```text
+.env
+
+---
+
 ## 👨‍💻 Author
 
 **Shaurya Parmar**
