@@ -258,10 +258,14 @@ Before running CampQuest, you need to create your own Cloudinary account and env
 
 Create a `.env` file in the main CampQuest folder and add:
 
-```env
+env
+
 CLOUDINARY_CLOUD_NAME=your_cloud_name
+
 CLOUDINARY_KEY=your_api_key
+
 CLOUDINARY_SECRET=your_api_secret
+
 SESSION_SECRET=your_session_secret
 
 
