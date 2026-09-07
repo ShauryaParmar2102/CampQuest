@@ -234,5 +234,4 @@ This project helped me practise:
 
 **Shaurya Parmar**
 
-Web Development Student
 
