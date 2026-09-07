@@ -56,62 +56,97 @@ CampQuest/
 │
 ├── 🎨 FRONTEND
 │   │
+
 │   ├── views/
+
 │   │   ├── campgrounds/
+
 │   │   │   ├── index.ejs
+
 │   │   │   ├── show.ejs
+
 │   │   │   ├── new.ejs
+
 │   │   │   └── edit.ejs
+
 │   │   │
 │   │   ├── users/
+
 │   │   │   ├── login.ejs
+
 │   │   │   └── register.ejs
 │   │   │
+
 │   │   ├── layouts/
+
 │   │   │   └── boilerplate.ejs
 │   │   │
 │   │   ├── partials/
+
 │   │   │   ├── navbar.ejs
+
 │   │   │   ├── flash.ejs
+
 │   │   │   └── footer.ejs
 │   │   │
+
 │   │   ├── home.ejs
+
 │   │   └── error.ejs
 │   │
 │   └── public/
+
 │       ├── stylesheets/
+
 │       ├── javascripts/
+
 │       └── images/
 │
 ├── ⚙️ BACKEND
 │   │
 │   ├── controllers/
+
 │   │   ├── campgroundController.js
+
 │   │   ├── reviewController.js
+
 │   │   └── UserController.js
 │   │
 │   ├── models/
+
 │   │   ├── campground.js
+
 │   │   ├── review.js
+
 │   │   └── user.js
 │   │
 │   ├── routes/
 │   │   ├── campgrounds.js
+
 │   │   ├── reviews.js
+
 │   │   └── users.js
 │   │
 │   ├── cloudinary/
+
 │   ├── utilities/
+
 │   ├── seeds/
 │   │
 │   ├── server.js
+
 │   ├── middlewares.js
+
 │   └── schemasForJoi.js
 │
 ├── 🔧 CONFIGURATION
+
 │   ├── .env
+
 │   ├── .gitignore
+
 │   ├── package.json
+
 │   └── package-lock.json
 │
 
