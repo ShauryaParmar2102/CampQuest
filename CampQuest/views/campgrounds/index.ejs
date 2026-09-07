@@ -1,0 +1,76 @@
+<% layout('layouts/boilerplate') %>
+
+<h1>All Campgrounds</h1>
+
+<!-- Link to create a new campground -->
+<div class="mb-3">
+    <a href="/campgrounds/new">Add New Campground</a>
+</div>
+
+<!-- Loop through all campgrounds passed in from the controller -->
+<% for (let camp of campsArr) { %>
+
+    <div class="card mb-3">
+        <div class="row">
+
+            <!-- Campground image -->
+            <div class="col-md-4">
+
+                <% if (camp.images.length) { %>
+
+                    <!-- Display the first campground image -->
+                    <img 
+                        class="img-fluid" 
+                        src="<%= camp.images[0].url %>"
+                        alt="<%= camp.title %>"
+                    >
+
+                <% } else { %>
+
+                    <!-- Display when campground has no image -->
+                    <div class="p-4 text-muted">
+                        No image available
+                    </div>
+
+                <% } %>
+
+            </div>
+
+            <!-- Campground information -->
+            <div class="col-md-8">
+
+                <div class="card-body">
+
+                    <!-- Campground title -->
+                    <h5 class="card-title">
+                        <%= camp.title %>
+                    </h5>
+
+                    <!-- Campground description -->
+                    <p class="card-text">
+                        <%= camp.description %>
+                    </p>
+
+                    <!-- Campground location -->
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <%= camp.location %>
+                        </small>
+                    </p>
+
+                    <!-- Link to individual campground -->
+                    <a 
+                        class="btn btn-primary" 
+                        href="/campgrounds/<%= camp._id %>"
+                    >
+                        View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<% } %>

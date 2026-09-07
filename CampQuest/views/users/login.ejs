@@ -1,0 +1,78 @@
+<% layout('layouts/boilerplate') %>
+
+<!-- Login page -->
+<div class="container d-flex justify-content-center align-items-center mb-5 mt-2">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+            <div class="card shadow">
+
+                <!-- Login page image -->
+                <img 
+                    src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-1.2.1&q=80&w=1080"
+                    alt="Camping"
+                    class="card-img-top"
+                >
+
+                <div class="card-body">
+
+                    <!-- Login heading -->
+                    <h4 class="card-title">Login to CampQuest</h4>
+
+                    <!-- Send login details to the login route -->
+                    <form action="/login" method="POST" novalidate class="needs-validation">
+
+                        <!-- Username -->
+                        <div class="mb-3">
+                            <label class="form-label" for="username">
+                                👤 Username:
+                            </label>
+
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="username"
+                                id="username"
+                                required
+                                autofocus
+                            >
+
+                            <div class="invalid-feedback">
+                                Please enter your username.
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="mb-3">
+                            <label class="form-label" for="password">
+                                🔒 Password:
+                            </label>
+
+                            <input
+                                class="form-control"
+                                type="password"
+                                name="password"
+                                id="password"
+                                required
+                            >
+
+                            <div class="invalid-feedback">
+                                Please enter your password.
+                            </div>
+                        </div>
+
+                        <!-- Login button -->
+                        <div class="mb-3">
+                            <button class="btn btn-success btn-block">
+                                🔑 Login
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

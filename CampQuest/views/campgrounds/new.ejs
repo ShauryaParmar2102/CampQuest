@@ -1,0 +1,157 @@
+<% layout('layouts/boilerplate') %> 
+
+<!-- Create campground page -->
+<div class="row">
+
+    <div class="col-md-6 offset-md-3">
+
+        <h1 class="text-center">Add a New Campground</h1>
+
+        <!-- Send the new campground data to the server -->
+        <form 
+            action="/campgrounds" 
+            method="POST" 
+            novalidate 
+            class="needs-validation" 
+            enctype="multipart/form-data"
+        >
+
+            <!-- Campground name -->
+            <div class="mb-3">
+
+                <label class="form-label" for="title">
+                    Name:
+                </label>
+
+                <input 
+                    class="form-control" 
+                    type="text" 
+                    name="campgrounds[title]" 
+                    id="title" 
+                    required
+                >
+
+                <div class="invalid-feedback">
+                    Please enter a campground name.
+                </div>
+
+            </div>
+
+
+            <!-- Campground location -->
+            <div class="mb-3">
+
+                <label class="form-label" for="location">
+                    City and State:
+                </label>
+
+                <input 
+                    class="form-control" 
+                    type="text" 
+                    name="campgrounds[location]" 
+                    id="location" 
+                    required
+                >
+
+                <div class="invalid-feedback">
+                    Please enter a location.
+                </div>
+
+            </div>
+
+
+            <!-- Price per night -->
+            <div class="mb-3">
+
+                <label class="form-label" for="price">
+                    Price per night:
+                </label>
+
+                <div class="input-group">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+
+                    <input 
+                        type="number" 
+                        class="form-control" 
+                        id="price"
+                        name="campgrounds[price]" 
+                        placeholder="Add price per night"
+                        min="0"
+                        required
+                    >
+
+                    <div class="invalid-feedback">
+                        Please enter a valid price.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Campground description -->
+            <div class="mb-3">
+
+                <label class="form-label" for="description">
+                    Description:
+                </label>
+
+                <textarea 
+                    class="form-control" 
+                    name="campgrounds[description]" 
+                    id="description" 
+                    required
+                ></textarea>
+
+                <div class="invalid-feedback">
+                    Please enter a description.
+                </div>
+
+            </div>
+
+
+            <!-- Campground images -->
+            <div class="mb-3">
+
+                <div class="custom-file">
+
+                    <input 
+                        type="file" 
+                        class="custom-file-input" 
+                        id="image" 
+                        name="image" 
+                        multiple
+                    >
+
+                    <label class="custom-file-label" for="image">
+                        Choose Image(s)
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- Create campground button -->
+            <div class="mb-3">
+
+                <button class="btn btn-success">
+                    Create Campground
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <!-- Return to all campgrounds -->
+        <a href="/campgrounds">
+            All Campgrounds
+        </a>
+
+    </div>
+
+</div>

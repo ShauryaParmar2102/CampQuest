@@ -1,0 +1,32 @@
+<!-- Display success flash message -->
+<% if (success && success.length) { %>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+
+        <%= success %>
+
+        <!-- Button to close the alert -->
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+    </div>
+
+<% } %>
+
+
+<!-- Display error flash message -->
+<% if (error && error.length) { %>
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+
+        <%= error %>
+
+        <!-- Button to close the alert -->
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+    </div>
+
+<% } %>

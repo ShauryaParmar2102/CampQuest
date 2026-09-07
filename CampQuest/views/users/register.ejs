@@ -1,0 +1,98 @@
+<% layout('layouts/boilerplate') %>
+
+<!-- Registration page -->
+<div class="container d-flex justify-content-center align-items-center mb-5 mt-2">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+            <div class="card shadow">
+
+                <!-- Registration page image -->
+                <img 
+                    src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixlib=rb-1.2.1&q=80&w=1080"
+                    alt="Camping"
+                    class="card-img-top"
+                >
+
+                <div class="card-body">
+
+                    <!-- Registration heading -->
+                    <h4 class="card-title">Create your CampQuest account</h4>
+
+                    <!-- Send registration details to the register route -->
+                    <form action="/register" method="POST" novalidate class="needs-validation">
+
+                        <!-- Username -->
+                        <div class="mb-3">
+                            <label class="form-label" for="username">
+                                👤 Username:
+                            </label>
+
+                            <input 
+                                class="form-control"
+                                type="text"
+                                name="username"
+                                id="username"
+                                minlength="3"
+                                maxlength="20"
+                                required
+                            >
+
+                            <div class="invalid-feedback">
+                                Username must be between 3 and 20 characters.
+                            </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label class="form-label" for="email">
+                                📧 Email
+                            </label>
+
+                            <input 
+                                class="form-control"
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                            >
+
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="mb-3">
+                            <label class="form-label" for="password">
+                                🔒 Password
+                            </label>
+
+                           <input 
+                                class="form-control"
+                                type="password"
+                                name="password"
+                                id="password"
+                                minlength="8"
+                                required
+                            >
+
+                            <div class="invalid-feedback">
+                                Password must be at least 8 characters.
+                            </div>
+                        </div>
+
+                        <!-- Register button -->
+                        <div class="mb-3">
+                            <button class="btn btn-success">
+                                ✅ Create Account
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
